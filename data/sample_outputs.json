@@ -1,0 +1,1141 @@
+{
+  "fallback": true,
+  "generatedFor": "Aarav Sharma",
+  "paths": [
+    {
+      "id": "full_stack",
+      "slug": "full-stack",
+      "title": "Full Stack Developer",
+      "accentColor": "#3B82F6",
+      "checklistPrefix": "fs-",
+      "matchScore": 82,
+      "baseMatchScore": 82,
+      "matchReason": "Your HTML/CSS basics, Git use and interest in web apps give you a head start, and you already built small apps.",
+      "dayInLife": "You start the day with a short stand-up, then pick up a ticket such as adding a filter to a dashboard page. You write a React component, connect it to an API route and test it in the browser. After lunch you review a teammate's pull request, fix a bug reported by a user and update the database query that slows a page down. The evening is for learning something new, such as authentication or deployment. The work mixes building screens people see with logic and data behind them, so you switch between design details and problem solving.",
+      "yearByYear": [
+        {
+          "yearLabel": "Year 2 (current): Foundation",
+          "academicYear": 2,
+          "focus": "Strong web basics and consistent building.",
+          "milestones": [
+            {
+              "id": "fs-m1",
+              "title": "Complete HTML5 and semantic markup",
+              "status": "achieved",
+              "requiredChecklistIds": ["fs-html"]
+            },
+            {
+              "id": "fs-m2",
+              "title": "Style responsive pages with CSS (Flexbox and Grid)",
+              "status": "in_progress",
+              "requiredChecklistIds": ["fs-css", "fs-responsive"]
+            },
+            {
+              "id": "fs-m3",
+              "title": "Learn JavaScript fundamentals (ES6, DOM, fetch)",
+              "status": "remaining",
+              "requiredChecklistIds": ["fs-js-basics", "fs-dom", "fs-fetch"]
+            },
+            {
+              "id": "fs-m4",
+              "title": "Use Git and GitHub for every project",
+              "status": "in_progress",
+              "requiredChecklistIds": ["fs-git", "fs-github"]
+            }
+          ],
+          "skillsToLearn": ["JavaScript (ES6+)", "Responsive design", "DOM", "Git workflow"],
+          "projectsToBuild": ["Personal portfolio website", "Weather app using a public API"]
+        },
+        {
+          "yearLabel": "Year 3: Build",
+          "academicYear": 3,
+          "focus": "Frameworks, backend and databases.",
+          "milestones": [
+            {
+              "id": "fs-m5",
+              "title": "Build UIs with React",
+              "status": "remaining",
+              "requiredChecklistIds": ["fs-react", "fs-state"]
+            },
+            {
+              "id": "fs-m6",
+              "title": "Build REST APIs with Node.js/Express or FastAPI",
+              "status": "remaining",
+              "requiredChecklistIds": ["fs-rest", "fs-backend"]
+            },
+            {
+              "id": "fs-m7",
+              "title": "Design and query a SQL database",
+              "status": "in_progress",
+              "requiredChecklistIds": ["fs-sql", "fs-schema"]
+            },
+            {
+              "id": "fs-m8",
+              "title": "Add login with authentication",
+              "status": "remaining",
+              "requiredChecklistIds": ["fs-auth"]
+            },
+            {
+              "id": "fs-m9",
+              "title": "Complete a summer internship or open-source contribution",
+              "status": "remaining",
+              "requiredChecklistIds": ["fs-intern"]
+            }
+          ],
+          "skillsToLearn": ["React", "Node.js or FastAPI", "PostgreSQL", "Authentication (JWT)", "REST design"],
+          "projectsToBuild": ["Expense tracker with login", "Blog platform with comments"]
+        },
+        {
+          "yearLabel": "Year 4: Job-ready",
+          "academicYear": 4,
+          "focus": "Deployment, DSA and placement preparation.",
+          "milestones": [
+            {
+              "id": "fs-m10",
+              "title": "Deploy a full-stack app live (Vercel, Render or similar)",
+              "status": "remaining",
+              "requiredChecklistIds": ["fs-deploy"]
+            },
+            {
+              "id": "fs-m11",
+              "title": "Solve 150+ DSA problems (arrays, strings, trees, graphs)",
+              "status": "remaining",
+              "requiredChecklistIds": ["fs-dsa"]
+            },
+            {
+              "id": "fs-m12",
+              "title": "Learn testing basics and clean code",
+              "status": "remaining",
+              "requiredChecklistIds": ["fs-testing"]
+            },
+            {
+              "id": "fs-m13",
+              "title": "Build a capstone project and a resume with 3 strong projects",
+              "status": "remaining",
+              "requiredChecklistIds": ["fs-capstone", "fs-resume"]
+            },
+            {
+              "id": "fs-m14",
+              "title": "Prepare for interviews (system design basics, mock interviews)",
+              "status": "remaining",
+              "requiredChecklistIds": ["fs-interview"]
+            }
+          ],
+          "skillsToLearn": ["Deployment", "Testing", "System design basics", "DSA", "TypeScript"],
+          "projectsToBuild": ["Capstone SaaS-style app (campus marketplace)"]
+        }
+      ],
+      "skillGaps": [
+        { "skill": "JavaScript", "currentLevel": 1, "requiredLevel": 4, "priority": "high" },
+        { "skill": "React", "currentLevel": 0, "requiredLevel": 4, "priority": "high" },
+        { "skill": "Backend (Node/FastAPI)", "currentLevel": 0, "requiredLevel": 3, "priority": "high" },
+        { "skill": "SQL and databases", "currentLevel": 2, "requiredLevel": 4, "priority": "medium" },
+        { "skill": "Git and GitHub", "currentLevel": 2, "requiredLevel": 3, "priority": "medium" },
+        { "skill": "DSA", "currentLevel": 2, "requiredLevel": 4, "priority": "high" },
+        { "skill": "Deployment", "currentLevel": 0, "requiredLevel": 3, "priority": "medium" }
+      ],
+      "projects": [
+        {
+          "name": "Personal portfolio",
+          "description": "Responsive portfolio with projects and contact form",
+          "techStack": ["HTML", "CSS", "JavaScript"],
+          "difficulty": "Beginner",
+          "estimatedHours": 15
+        },
+        {
+          "name": "Weather dashboard",
+          "description": "Search a city and show forecast from a public API",
+          "techStack": ["JavaScript", "Fetch API"],
+          "difficulty": "Beginner",
+          "estimatedHours": 20
+        },
+        {
+          "name": "Expense tracker",
+          "description": "Login, add and filter expenses, monthly chart",
+          "techStack": ["React", "FastAPI", "SQLite/PostgreSQL"],
+          "difficulty": "Intermediate",
+          "estimatedHours": 45
+        },
+        {
+          "name": "Campus marketplace",
+          "description": "Students list and request used books and equipment",
+          "techStack": ["React", "Node/FastAPI", "PostgreSQL"],
+          "difficulty": "Advanced",
+          "estimatedHours": 80
+        }
+      ],
+      "firstMonthPlan": [
+        {
+          "week": 1,
+          "title": "Web basics refresh",
+          "goals": ["Finish semantic HTML and CSS Flexbox", "Set up GitHub and VS Code"],
+          "dailyHours": 1.5,
+          "deliverable": "Portfolio page with 3 sections pushed to GitHub"
+        },
+        {
+          "week": 2,
+          "title": "Responsive design",
+          "goals": ["Learn CSS Grid and media queries", "Make the portfolio mobile friendly"],
+          "dailyHours": 1.5,
+          "deliverable": "Responsive portfolio deployed on GitHub Pages"
+        },
+        {
+          "week": 3,
+          "title": "JavaScript start",
+          "goals": ["Variables, functions, arrays, DOM events", "10 small exercises"],
+          "dailyHours": 1.5,
+          "deliverable": "Interactive to-do list in plain JavaScript"
+        },
+        {
+          "week": 4,
+          "title": "APIs",
+          "goals": ["Learn fetch and JSON", "Build the weather app"],
+          "dailyHours": 1.5,
+          "deliverable": "Weather dashboard repo with README"
+        }
+      ],
+      "resources": [
+        { "title": "Full Stack Developer Roadmap", "url": "https://roadmap.sh/full-stack", "type": "Roadmap", "isFree": true },
+        { "title": "MDN Learn Web Development", "url": "https://developer.mozilla.org/en-US/docs/Learn", "type": "Documentation", "isFree": true },
+        { "title": "The Odin Project", "url": "https://www.theodinproject.com/", "type": "Course", "isFree": true },
+        { "title": "freeCodeCamp", "url": "https://www.freecodecamp.org/", "type": "Course", "isFree": true },
+        { "title": "CS50's Web Programming", "url": "https://cs50.harvard.edu/web/", "type": "Course", "isFree": true },
+        { "title": "React Learn", "url": "https://react.dev/learn", "type": "Documentation", "isFree": true },
+        { "title": "FastAPI Tutorial", "url": "https://fastapi.tiangolo.com/tutorial/", "type": "Documentation", "isFree": true },
+        { "title": "NeetCode Roadmap (DSA)", "url": "https://neetcode.io/roadmap", "type": "Practice", "isFree": true }
+      ],
+      "checklist": [
+        { "id": "fs-html", "label": "Write semantic HTML5 pages", "category": "Frontend", "skill": "HTML", "levelGained": 3, "stage": "foundation", "checked": true },
+        { "id": "fs-css", "label": "Style pages with CSS", "category": "Frontend", "skill": "CSS", "levelGained": 3, "stage": "foundation", "checked": true },
+        { "id": "fs-responsive", "label": "Flexbox, Grid and media queries", "category": "Frontend", "skill": "CSS", "levelGained": 3, "stage": "foundation", "checked": false },
+        { "id": "fs-js-basics", "label": "JavaScript variables, functions, arrays, objects", "category": "Frontend", "skill": "JavaScript", "levelGained": 2, "stage": "foundation", "checked": false },
+        { "id": "fs-dom", "label": "DOM manipulation and events", "category": "Frontend", "skill": "JavaScript", "levelGained": 3, "stage": "foundation", "checked": false },
+        { "id": "fs-fetch", "label": "Fetch API and JSON", "category": "Frontend", "skill": "JavaScript", "levelGained": 3, "stage": "foundation", "checked": false },
+        { "id": "fs-git", "label": "Commit, branch, merge", "category": "Tools", "skill": "Git", "levelGained": 3, "stage": "foundation", "checked": true },
+        { "id": "fs-github", "label": "Push, pull requests, README", "category": "Tools", "skill": "GitHub", "levelGained": 3, "stage": "foundation", "checked": false },
+        { "id": "fs-react", "label": "Components, props, hooks", "category": "Frontend", "skill": "React", "levelGained": 3, "stage": "build", "checked": false },
+        { "id": "fs-state", "label": "State management and routing", "category": "Frontend", "skill": "React", "levelGained": 4, "stage": "build", "checked": false },
+        { "id": "fs-rest", "label": "Design REST endpoints", "category": "Backend", "skill": "APIs", "levelGained": 3, "stage": "build", "checked": false },
+        { "id": "fs-backend", "label": "Build a server (Node/Express or FastAPI)", "category": "Backend", "skill": "Backend", "levelGained": 3, "stage": "build", "checked": false },
+        { "id": "fs-sql", "label": "Write SQL queries and joins", "category": "Database", "skill": "SQL", "levelGained": 3, "stage": "build", "checked": true },
+        { "id": "fs-schema", "label": "Design tables and relations", "category": "Database", "skill": "SQL", "levelGained": 4, "stage": "build", "checked": false },
+        { "id": "fs-auth", "label": "Implement login with JWT or sessions", "category": "Backend", "skill": "Authentication", "levelGained": 3, "stage": "build", "checked": false },
+        { "id": "fs-intern", "label": "Internship or open-source contribution", "category": "Experience", "skill": "Teamwork", "levelGained": 3, "stage": "specialize", "checked": false },
+        { "id": "fs-deploy", "label": "Deploy a live app", "category": "DevOps", "skill": "Deployment", "levelGained": 3, "stage": "specialize", "checked": false },
+        { "id": "fs-testing", "label": "Write unit tests", "category": "Quality", "skill": "Testing", "levelGained": 3, "stage": "specialize", "checked": false },
+        { "id": "fs-dsa", "label": "Solve 150+ DSA problems", "category": "Core CS", "skill": "DSA", "levelGained": 4, "stage": "job_ready", "checked": false },
+        { "id": "fs-capstone", "label": "Capstone project with README and demo", "category": "Projects", "skill": "Full stack", "levelGained": 4, "stage": "job_ready", "checked": false },
+        { "id": "fs-resume", "label": "Resume with 3 strong projects", "category": "Career", "skill": "Career", "levelGained": 3, "stage": "job_ready", "checked": false },
+        { "id": "fs-interview", "label": "Mock interviews and system design basics", "category": "Career", "skill": "Interviews", "levelGained": 3, "stage": "job_ready", "checked": false }
+      ]
+    },
+    {
+      "id": "data_science",
+      "slug": "data-science",
+      "title": "Data Scientist",
+      "accentColor": "#14B8A6",
+      "checklistPrefix": "ds-",
+      "matchScore": 78,
+      "baseMatchScore": 78,
+      "matchReason": "Your Python and SQL basics plus interest in data analysis fit well, and the maths load is lighter than in AI/ML engineering.",
+      "dayInLife": "You start by checking a dashboard to see if yesterday's numbers look normal. A manager asks why sign-ups dropped, so you pull data with SQL, clean it in Python and find that one channel changed. You build a chart, write a short summary with a recommendation and share it in a meeting. Later you test a simple model that predicts which users may leave and discuss its limits with the team. Most of the job is asking good questions, checking data quality and explaining results clearly to people who are not technical.",
+      "yearByYear": [
+        {
+          "yearLabel": "Year 2 (current): Foundation",
+          "academicYear": 2,
+          "focus": "Data handling and statistics basics.",
+          "milestones": [
+            {
+              "id": "ds-m1",
+              "title": "Python for data work",
+              "status": "achieved",
+              "requiredChecklistIds": ["ds-python"]
+            },
+            {
+              "id": "ds-m2",
+              "title": "Write SQL queries (SELECT, WHERE, JOIN, GROUP BY)",
+              "status": "achieved",
+              "requiredChecklistIds": ["ds-sql-basic"]
+            },
+            {
+              "id": "ds-m3",
+              "title": "Learn Pandas and data cleaning",
+              "status": "remaining",
+              "requiredChecklistIds": ["ds-pandas"]
+            },
+            {
+              "id": "ds-m4",
+              "title": "Learn descriptive statistics and probability",
+              "status": "remaining",
+              "requiredChecklistIds": ["ds-stats"]
+            }
+          ],
+          "skillsToLearn": ["SQL", "Pandas", "Statistics", "Excel"],
+          "projectsToBuild": ["Cricket or movie dataset analysis", "Student performance dashboard"]
+        },
+        {
+          "yearLabel": "Year 3: Analysis and modelling",
+          "academicYear": 3,
+          "focus": "Visualisation, hypothesis testing and ML.",
+          "milestones": [
+            {
+              "id": "ds-m5",
+              "title": "Build dashboards in Power BI or Tableau",
+              "status": "remaining",
+              "requiredChecklistIds": ["ds-bi"]
+            },
+            {
+              "id": "ds-m6",
+              "title": "Run hypothesis tests and A/B test analysis",
+              "status": "remaining",
+              "requiredChecklistIds": ["ds-hypothesis"]
+            },
+            {
+              "id": "ds-m7",
+              "title": "Learn machine learning (regression, classification, clustering)",
+              "status": "remaining",
+              "requiredChecklistIds": ["ds-ml"]
+            },
+            {
+              "id": "ds-m8",
+              "title": "Complete 2 end-to-end analysis projects with written insights",
+              "status": "remaining",
+              "requiredChecklistIds": ["ds-projects"]
+            },
+            {
+              "id": "ds-m9",
+              "title": "Do a data internship or analytics project for a local organisation",
+              "status": "remaining",
+              "requiredChecklistIds": ["ds-intern"]
+            }
+          ],
+          "skillsToLearn": ["Power BI", "Advanced SQL (window functions)", "Scikit-learn", "Hypothesis testing", "Storytelling with data"],
+          "projectsToBuild": ["Sales forecasting", "Customer churn prediction"]
+        },
+        {
+          "yearLabel": "Year 4: Job-ready",
+          "academicYear": 4,
+          "focus": "Business problems and communication.",
+          "milestones": [
+            {
+              "id": "ds-m10",
+              "title": "Learn feature engineering and model improvement",
+              "status": "remaining",
+              "requiredChecklistIds": ["ds-features"]
+            },
+            {
+              "id": "ds-m11",
+              "title": "Work with a cloud data tool (BigQuery or similar)",
+              "status": "remaining",
+              "requiredChecklistIds": ["ds-cloud"]
+            },
+            {
+              "id": "ds-m12",
+              "title": "Publish a case study with business impact",
+              "status": "remaining",
+              "requiredChecklistIds": ["ds-case"]
+            },
+            {
+              "id": "ds-m13",
+              "title": "Present findings in a clear 5-minute talk",
+              "status": "remaining",
+              "requiredChecklistIds": ["ds-present"]
+            },
+            {
+              "id": "ds-m14",
+              "title": "Prepare a resume, portfolio and interviews (SQL, statistics, case studies)",
+              "status": "remaining",
+              "requiredChecklistIds": ["ds-resume", "ds-interview"]
+            }
+          ],
+          "skillsToLearn": ["Time series basics", "Experiment design", "Cloud data warehouse", "Communication"],
+          "projectsToBuild": ["Capstone case study using a public dataset with a dashboard and written report"]
+        }
+      ],
+      "skillGaps": [
+        { "skill": "SQL (advanced)", "currentLevel": 2, "requiredLevel": 4, "priority": "high" },
+        { "skill": "Statistics and hypothesis testing", "currentLevel": 1, "requiredLevel": 4, "priority": "high" },
+        { "skill": "Pandas and data cleaning", "currentLevel": 1, "requiredLevel": 4, "priority": "high" },
+        { "skill": "Data visualisation (Power BI or Python)", "currentLevel": 0, "requiredLevel": 3, "priority": "medium" },
+        { "skill": "Machine learning", "currentLevel": 0, "requiredLevel": 3, "priority": "medium" },
+        { "skill": "Business communication", "currentLevel": 1, "requiredLevel": 4, "priority": "medium" }
+      ],
+      "projects": [
+        {
+          "name": "Cricket dataset analysis",
+          "description": "Explore player and match data, find trends",
+          "techStack": ["Python", "Pandas", "Matplotlib"],
+          "difficulty": "Beginner",
+          "estimatedHours": 15
+        },
+        {
+          "name": "Student performance dashboard",
+          "description": "Interactive dashboard of grades by factor",
+          "techStack": ["Excel or Power BI", "SQL"],
+          "difficulty": "Beginner",
+          "estimatedHours": 20
+        },
+        {
+          "name": "Customer churn prediction",
+          "description": "Predict churn and explain top drivers",
+          "techStack": ["Python", "Scikit-learn", "SQL"],
+          "difficulty": "Intermediate",
+          "estimatedHours": 40
+        },
+        {
+          "name": "Business case study",
+          "description": "Answer a business question end to end with recommendations",
+          "techStack": ["SQL", "Python", "Power BI"],
+          "difficulty": "Advanced",
+          "estimatedHours": 60
+        }
+      ],
+      "firstMonthPlan": [
+        {
+          "week": 1,
+          "title": "SQL practice",
+          "goals": ["SELECT, WHERE, JOIN, GROUP BY on a sample database", "20 practice queries"],
+          "dailyHours": 1.5,
+          "deliverable": "Query notebook with 20 solved queries"
+        },
+        {
+          "week": 2,
+          "title": "Pandas and cleaning",
+          "goals": ["Load CSV files, handle missing values, group and merge"],
+          "dailyHours": 1.5,
+          "deliverable": "Clean dataset plus short cleaning report"
+        },
+        {
+          "week": 3,
+          "title": "Statistics basics",
+          "goals": ["Mean, median, standard deviation, distributions, correlation"],
+          "dailyHours": 1.5,
+          "deliverable": "Notebook explaining 5 statistics on your dataset"
+        },
+        {
+          "week": 4,
+          "title": "First analysis project",
+          "goals": ["Explore a public dataset and write 5 insights"],
+          "dailyHours": 1.5,
+          "deliverable": "Cricket analysis notebook published on GitHub"
+        }
+      ],
+      "resources": [
+        { "title": "AI and Data Scientist Roadmap", "url": "https://roadmap.sh/ai-data-scientist", "type": "Roadmap", "isFree": true },
+        { "title": "Kaggle Learn (Pandas, SQL, Visualisation)", "url": "https://www.kaggle.com/learn", "type": "Course", "isFree": true },
+        { "title": "Pandas Getting Started", "url": "https://pandas.pydata.org/docs/getting_started/", "type": "Documentation", "isFree": true },
+        { "title": "CS50's Introduction to Programming with Python", "url": "https://cs50.harvard.edu/python/", "type": "Course", "isFree": true },
+        { "title": "scikit-learn Tutorials", "url": "https://scikit-learn.org/stable/tutorial/", "type": "Documentation", "isFree": true },
+        { "title": "NPTEL Courses", "url": "https://nptel.ac.in/", "type": "Course", "isFree": true },
+        { "title": "freeCodeCamp", "url": "https://www.freecodecamp.org/", "type": "Course", "isFree": true }
+      ],
+      "checklist": [
+        { "id": "ds-python", "label": "Python for data tasks", "category": "Programming", "skill": "Python", "levelGained": 3, "stage": "foundation", "checked": true },
+        { "id": "ds-sql-basic", "label": "SELECT, WHERE, JOIN, GROUP BY", "category": "Database", "skill": "SQL", "levelGained": 3, "stage": "foundation", "checked": true },
+        { "id": "ds-pandas", "label": "Clean and transform data with Pandas", "category": "Data", "skill": "Pandas", "levelGained": 3, "stage": "foundation", "checked": false },
+        { "id": "ds-stats", "label": "Descriptive statistics and probability", "category": "Maths", "skill": "Statistics", "levelGained": 3, "stage": "foundation", "checked": false },
+        { "id": "ds-excel", "label": "Excel formulas and pivot tables", "category": "Tools", "skill": "Excel", "levelGained": 3, "stage": "foundation", "checked": false },
+        { "id": "ds-sql-adv", "label": "Window functions, CTEs, subqueries", "category": "Database", "skill": "SQL", "levelGained": 4, "stage": "build", "checked": false },
+        { "id": "ds-bi", "label": "Build a dashboard in Power BI or Tableau", "category": "Visualisation", "skill": "BI", "levelGained": 3, "stage": "build", "checked": false },
+        { "id": "ds-hypothesis", "label": "Hypothesis tests and A/B test analysis", "category": "Maths", "skill": "Statistics", "levelGained": 4, "stage": "build", "checked": false },
+        { "id": "ds-ml", "label": "Train regression and classification models", "category": "ML", "skill": "scikit-learn", "levelGained": 3, "stage": "build", "checked": false },
+        { "id": "ds-projects", "label": "Two end-to-end analysis projects on GitHub", "category": "Projects", "skill": "Portfolio", "levelGained": 3, "stage": "specialize", "checked": false },
+        { "id": "ds-intern", "label": "Data internship or analytics project", "category": "Experience", "skill": "Teamwork", "levelGained": 3, "stage": "specialize", "checked": false },
+        { "id": "ds-features", "label": "Feature engineering and model tuning", "category": "ML", "skill": "ML", "levelGained": 4, "stage": "specialize", "checked": false },
+        { "id": "ds-cloud", "label": "Query data in a cloud warehouse", "category": "Cloud", "skill": "BigQuery or similar", "levelGained": 3, "stage": "job_ready", "checked": false },
+        { "id": "ds-case", "label": "Publish a business case study", "category": "Projects", "skill": "Analytics", "levelGained": 4, "stage": "job_ready", "checked": false },
+        { "id": "ds-present", "label": "Present insights in a short talk", "category": "Communication", "skill": "Storytelling", "levelGained": 3, "stage": "job_ready", "checked": false },
+        { "id": "ds-resume", "label": "Resume and portfolio with 3 projects", "category": "Career", "skill": "Career", "levelGained": 3, "stage": "job_ready", "checked": false },
+        { "id": "ds-interview", "label": "SQL, statistics and case interview practice", "category": "Career", "skill": "Interviews", "levelGained": 3, "stage": "job_ready", "checked": false }
+      ]
+    },
+    {
+      "id": "ai_ml",
+      "slug": "ai-ml",
+      "title": "AI/ML Engineer",
+      "accentColor": "#8B5CF6",
+      "checklistPrefix": "ml-",
+      "matchScore": 74,
+      "baseMatchScore": 74,
+      "matchReason": "Python is your strongest skill and you are interested in AI, but you need maths, ML fundamentals and project proof.",
+      "dayInLife": "You begin by checking the training run you started last night and comparing its metrics with the previous version. You then clean a new batch of data, tune a model and write a short note on what improved and what did not. In the afternoon you work with a teammate to turn a notebook into an API so the product team can use the model. Part of the day goes to reading a paper or documentation to decide whether a newer approach is worth trying. The role is a mix of experiments, coding and communication, and many experiments fail before one works.",
+      "yearByYear": [
+        {
+          "yearLabel": "Year 2 (current): Foundation",
+          "academicYear": 2,
+          "focus": "Python depth and maths basics.",
+          "milestones": [
+            {
+              "id": "ml-m1",
+              "title": "Python fundamentals with OOP",
+              "status": "achieved",
+              "requiredChecklistIds": ["ml-python"]
+            },
+            {
+              "id": "ml-m2",
+              "title": "Learn NumPy and Pandas",
+              "status": "remaining",
+              "requiredChecklistIds": ["ml-numpy", "ml-pandas"]
+            },
+            {
+              "id": "ml-m3",
+              "title": "Revise linear algebra, probability and statistics basics",
+              "status": "remaining",
+              "requiredChecklistIds": ["ml-linalg", "ml-stats"]
+            },
+            {
+              "id": "ml-m4",
+              "title": "Plot data with Matplotlib",
+              "status": "remaining",
+              "requiredChecklistIds": ["ml-viz"]
+            }
+          ],
+          "skillsToLearn": ["NumPy", "Pandas", "Matplotlib", "Maths for ML"],
+          "projectsToBuild": ["Student marks analysis notebook", "Spam detector with simple rules"]
+        },
+        {
+          "yearLabel": "Year 3: Core ML",
+          "academicYear": 3,
+          "focus": "Classical ML and deep learning basics.",
+          "milestones": [
+            {
+              "id": "ml-m5",
+              "title": "Learn supervised and unsupervised ML with scikit-learn",
+              "status": "remaining",
+              "requiredChecklistIds": ["ml-sklearn", "ml-eval"]
+            },
+            {
+              "id": "ml-m6",
+              "title": "Complete one Kaggle competition or dataset project",
+              "status": "remaining",
+              "requiredChecklistIds": ["ml-kaggle"]
+            },
+            {
+              "id": "ml-m7",
+              "title": "Learn deep learning with PyTorch or TensorFlow",
+              "status": "remaining",
+              "requiredChecklistIds": ["ml-dl"]
+            },
+            {
+              "id": "ml-m8",
+              "title": "Build one project each in vision and NLP",
+              "status": "remaining",
+              "requiredChecklistIds": ["ml-cv", "ml-nlp"]
+            },
+            {
+              "id": "ml-m9",
+              "title": "Complete an AI/ML internship or research project",
+              "status": "remaining",
+              "requiredChecklistIds": ["ml-intern"]
+            }
+          ],
+          "skillsToLearn": ["scikit-learn", "PyTorch", "Model evaluation", "Feature engineering", "Basic NLP and vision"],
+          "projectsToBuild": ["House price predictor", "Image classifier", "Sentiment analysis app"]
+        },
+        {
+          "yearLabel": "Year 4: Production and job readiness",
+          "academicYear": 4,
+          "focus": "Deploying models and using modern AI tools.",
+          "milestones": [
+            {
+              "id": "ml-m10",
+              "title": "Serve a model through an API (FastAPI) and Docker",
+              "status": "remaining",
+              "requiredChecklistIds": ["ml-serve", "ml-docker"]
+            },
+            {
+              "id": "ml-m11",
+              "title": "Build an LLM app with RAG and prompt design",
+              "status": "remaining",
+              "requiredChecklistIds": ["ml-llm"]
+            },
+            {
+              "id": "ml-m12",
+              "title": "Learn experiment tracking and MLOps basics",
+              "status": "remaining",
+              "requiredChecklistIds": ["ml-mlops"]
+            },
+            {
+              "id": "ml-m13",
+              "title": "Build a capstone ML product with a demo",
+              "status": "remaining",
+              "requiredChecklistIds": ["ml-capstone"]
+            },
+            {
+              "id": "ml-m14",
+              "title": "Prepare a resume, GitHub portfolio and interviews",
+              "status": "remaining",
+              "requiredChecklistIds": ["ml-resume", "ml-interview"]
+            }
+          ],
+          "skillsToLearn": ["FastAPI", "Docker", "MLflow basics", "RAG", "Vector databases", "DSA"],
+          "projectsToBuild": ["Document question-answering app (RAG)", "End-to-end ML product"]
+        }
+      ],
+      "skillGaps": [
+        { "skill": "Maths (linear algebra, statistics)", "currentLevel": 1, "requiredLevel": 4, "priority": "high" },
+        { "skill": "Pandas and NumPy", "currentLevel": 1, "requiredLevel": 4, "priority": "high" },
+        { "skill": "Machine learning (scikit-learn)", "currentLevel": 0, "requiredLevel": 4, "priority": "high" },
+        { "skill": "Deep learning (PyTorch)", "currentLevel": 0, "requiredLevel": 3, "priority": "high" },
+        { "skill": "Model deployment", "currentLevel": 0, "requiredLevel": 3, "priority": "medium" },
+        { "skill": "LLMs and RAG", "currentLevel": 0, "requiredLevel": 3, "priority": "medium" },
+        { "skill": "DSA", "currentLevel": 2, "requiredLevel": 3, "priority": "medium" }
+      ],
+      "projects": [
+        {
+          "name": "Student marks analysis",
+          "description": "Clean, explore and visualise a marks dataset",
+          "techStack": ["Python", "Pandas", "Matplotlib"],
+          "difficulty": "Beginner",
+          "estimatedHours": 15
+        },
+        {
+          "name": "House price predictor",
+          "description": "Regression model with evaluation and feature engineering",
+          "techStack": ["scikit-learn", "Pandas"],
+          "difficulty": "Intermediate",
+          "estimatedHours": 30
+        },
+        {
+          "name": "Image classifier",
+          "description": "Classify images (for example plant leaf disease) with transfer learning",
+          "techStack": ["PyTorch", "torchvision"],
+          "difficulty": "Intermediate",
+          "estimatedHours": 45
+        },
+        {
+          "name": "Document Q and A with RAG",
+          "description": "Upload PDFs and ask questions with source citations",
+          "techStack": ["Python", "embeddings", "vector store", "FastAPI"],
+          "difficulty": "Advanced",
+          "estimatedHours": 70
+        }
+      ],
+      "firstMonthPlan": [
+        {
+          "week": 1,
+          "title": "NumPy and Pandas",
+          "goals": ["Arrays, DataFrames, cleaning, group by"],
+          "dailyHours": 1.5,
+          "deliverable": "Notebook cleaning a real dataset"
+        },
+        {
+          "week": 2,
+          "title": "Visualise and understand data",
+          "goals": ["Matplotlib, basic statistics, correlations"],
+          "dailyHours": 1.5,
+          "deliverable": "EDA notebook with 5 insights"
+        },
+        {
+          "week": 3,
+          "title": "Maths for ML",
+          "goals": ["Vectors, matrices, mean, variance, probability basics"],
+          "dailyHours": 1.5,
+          "deliverable": "One-page summary notes and 20 solved problems"
+        },
+        {
+          "week": 4,
+          "title": "First ML model",
+          "goals": ["Train and evaluate a linear regression model"],
+          "dailyHours": 1.5,
+          "deliverable": "House price predictor with README"
+        }
+      ],
+      "resources": [
+        { "title": "AI Engineer Roadmap", "url": "https://roadmap.sh/ai-engineer", "type": "Roadmap", "isFree": true },
+        { "title": "Kaggle Learn", "url": "https://www.kaggle.com/learn", "type": "Course", "isFree": true },
+        { "title": "Machine Learning Specialization (Andrew Ng)", "url": "https://www.coursera.org/learn/machine-learning", "type": "Course", "isFree": true },
+        { "title": "Practical Deep Learning (fast.ai)", "url": "https://course.fast.ai/", "type": "Course", "isFree": true },
+        { "title": "scikit-learn Tutorials", "url": "https://scikit-learn.org/stable/tutorial/", "type": "Documentation", "isFree": true },
+        { "title": "Hugging Face Learn", "url": "https://huggingface.co/learn", "type": "Course", "isFree": true },
+        { "title": "NPTEL Courses", "url": "https://nptel.ac.in/", "type": "Course", "isFree": true },
+        { "title": "Pandas Getting Started", "url": "https://pandas.pydata.org/docs/getting_started/", "type": "Documentation", "isFree": true }
+      ],
+      "checklist": [
+        { "id": "ml-python", "label": "Python with functions and OOP", "category": "Programming", "skill": "Python", "levelGained": 3, "stage": "foundation", "checked": true },
+        { "id": "ml-numpy", "label": "Use NumPy arrays and vectorisation", "category": "Data", "skill": "NumPy", "levelGained": 3, "stage": "foundation", "checked": false },
+        { "id": "ml-pandas", "label": "Clean and analyse data with Pandas", "category": "Data", "skill": "Pandas", "levelGained": 3, "stage": "foundation", "checked": false },
+        { "id": "ml-viz", "label": "Make plots with Matplotlib", "category": "Data", "skill": "Visualisation", "levelGained": 3, "stage": "foundation", "checked": false },
+        { "id": "ml-linalg", "label": "Vectors, matrices, dot products", "category": "Maths", "skill": "Linear algebra", "levelGained": 3, "stage": "foundation", "checked": false },
+        { "id": "ml-stats", "label": "Mean, variance, probability, distributions", "category": "Maths", "skill": "Statistics", "levelGained": 3, "stage": "foundation", "checked": false },
+        { "id": "ml-sklearn", "label": "Train regression and classification models", "category": "ML", "skill": "scikit-learn", "levelGained": 3, "stage": "build", "checked": false },
+        { "id": "ml-eval", "label": "Metrics, cross-validation, overfitting", "category": "ML", "skill": "Evaluation", "levelGained": 3, "stage": "build", "checked": false },
+        { "id": "ml-kaggle", "label": "Complete a Kaggle dataset project", "category": "Practice", "skill": "Kaggle", "levelGained": 3, "stage": "build", "checked": false },
+        { "id": "ml-dl", "label": "Train a neural network in PyTorch", "category": "Deep learning", "skill": "PyTorch", "levelGained": 3, "stage": "specialize", "checked": false },
+        { "id": "ml-cv", "label": "Image classification project", "category": "Deep learning", "skill": "Computer vision", "levelGained": 3, "stage": "specialize", "checked": false },
+        { "id": "ml-nlp", "label": "Text classification or sentiment project", "category": "Deep learning", "skill": "NLP", "levelGained": 3, "stage": "specialize", "checked": false },
+        { "id": "ml-intern", "label": "AI/ML internship or research project", "category": "Experience", "skill": "Teamwork", "levelGained": 3, "stage": "specialize", "checked": false },
+        { "id": "ml-serve", "label": "Serve a model with FastAPI", "category": "MLOps", "skill": "Deployment", "levelGained": 3, "stage": "job_ready", "checked": false },
+        { "id": "ml-docker", "label": "Containerise an app with Docker", "category": "MLOps", "skill": "Docker", "levelGained": 3, "stage": "job_ready", "checked": false },
+        { "id": "ml-llm", "label": "Build a RAG app with an LLM API", "category": "GenAI", "skill": "LLMs", "levelGained": 3, "stage": "job_ready", "checked": false },
+        { "id": "ml-mlops", "label": "Track experiments (MLflow or similar)", "category": "MLOps", "skill": "MLOps", "levelGained": 2, "stage": "job_ready", "checked": false },
+        { "id": "ml-capstone", "label": "End-to-end ML capstone with demo", "category": "Projects", "skill": "ML engineering", "levelGained": 4, "stage": "job_ready", "checked": false },
+        { "id": "ml-resume", "label": "Resume and portfolio with 3 ML projects", "category": "Career", "skill": "Career", "levelGained": 3, "stage": "job_ready", "checked": false },
+        { "id": "ml-interview", "label": "ML interview and DSA practice", "category": "Career", "skill": "Interviews", "levelGained": 3, "stage": "job_ready", "checked": false }
+      ]
+    },
+    {
+      "id": "data_engineering",
+      "slug": "data-engineering",
+      "title": "Data Engineer",
+      "accentColor": "#F59E0B",
+      "checklistPrefix": "de-",
+      "matchScore": 70,
+      "baseMatchScore": 70,
+      "matchReason": "Your Python and SQL basics are a solid start, and you like building things that work behind the scenes, but you still need Linux, data modelling and pipeline tools.",
+      "dayInLife": "You start by checking whether last night's pipelines ran on time. One job failed because a source file changed its format, so you fix the parsing step, rerun the job and add a check so the same problem is caught earlier. Later you meet an analyst who needs a new table, so you design it, write the SQL transformation and test it on a small sample. In the afternoon you review a teammate's pipeline code and speed up a slow query. The evening is quiet unless an alert fires. The work is about reliability, so you spend as much time preventing problems as building new things.",
+      "yearByYear": [
+        {
+          "yearLabel": "Year 2 (current): Foundation",
+          "academicYear": 2,
+          "focus": "Linux, SQL, scripting and data modelling basics.",
+          "milestones": [
+            {
+              "id": "de-m1",
+              "title": "Write Python scripts that read and write files",
+              "status": "achieved",
+              "requiredChecklistIds": ["de-python"]
+            },
+            {
+              "id": "de-m2",
+              "title": "Write SQL queries (SELECT, JOIN, GROUP BY)",
+              "status": "achieved",
+              "requiredChecklistIds": ["de-sql-basic"]
+            },
+            {
+              "id": "de-m3",
+              "title": "Use the Linux command line and Git",
+              "status": "in_progress",
+              "requiredChecklistIds": ["de-linux", "de-git"]
+            },
+            {
+              "id": "de-m4",
+              "title": "Learn data modelling basics (keys, normalisation)",
+              "status": "remaining",
+              "requiredChecklistIds": ["de-modelling"]
+            }
+          ],
+          "skillsToLearn": ["Linux shell", "SQL", "Git", "Data modelling"],
+          "projectsToBuild": ["CSV cleaning script", "Mini library database"]
+        },
+        {
+          "yearLabel": "Year 3: Build",
+          "academicYear": 3,
+          "focus": "Pipelines, databases and containers.",
+          "milestones": [
+            {
+              "id": "de-m5",
+              "title": "Master advanced SQL (window functions, CTEs, indexes)",
+              "status": "remaining",
+              "requiredChecklistIds": ["de-sql-adv"]
+            },
+            {
+              "id": "de-m6",
+              "title": "Set up and load a PostgreSQL database",
+              "status": "remaining",
+              "requiredChecklistIds": ["de-postgres"]
+            },
+            {
+              "id": "de-m7",
+              "title": "Build an ETL pipeline script",
+              "status": "remaining",
+              "requiredChecklistIds": ["de-etl"]
+            },
+            {
+              "id": "de-m8",
+              "title": "Design a star schema for a sample business",
+              "status": "remaining",
+              "requiredChecklistIds": ["de-star"]
+            },
+            {
+              "id": "de-m9",
+              "title": "Containerise a pipeline with Docker",
+              "status": "remaining",
+              "requiredChecklistIds": ["de-docker"]
+            },
+            {
+              "id": "de-m10",
+              "title": "Schedule workflows with Apache Airflow",
+              "status": "remaining",
+              "requiredChecklistIds": ["de-airflow"]
+            },
+            {
+              "id": "de-m11",
+              "title": "Complete a data internship or open-source data project",
+              "status": "remaining",
+              "requiredChecklistIds": ["de-intern"]
+            }
+          ],
+          "skillsToLearn": ["Advanced SQL", "PostgreSQL", "ETL design", "Docker", "Airflow"],
+          "projectsToBuild": ["Sales data warehouse (star schema)", "Scheduled API-to-database pipeline"]
+        },
+        {
+          "yearLabel": "Year 4: Job-ready",
+          "academicYear": 4,
+          "focus": "Scale, quality and placement preparation.",
+          "milestones": [
+            {
+              "id": "de-m12",
+              "title": "Process large datasets with PySpark",
+              "status": "remaining",
+              "requiredChecklistIds": ["de-spark"]
+            },
+            {
+              "id": "de-m13",
+              "title": "Build tested transformations with dbt",
+              "status": "remaining",
+              "requiredChecklistIds": ["de-dbt"]
+            },
+            {
+              "id": "de-m14",
+              "title": "Load and query a cloud data warehouse (BigQuery or similar)",
+              "status": "remaining",
+              "requiredChecklistIds": ["de-cloud"]
+            },
+            {
+              "id": "de-m15",
+              "title": "Add data quality checks and monitoring",
+              "status": "remaining",
+              "requiredChecklistIds": ["de-quality"]
+            },
+            {
+              "id": "de-m16",
+              "title": "Learn streaming basics with Kafka",
+              "status": "remaining",
+              "requiredChecklistIds": ["de-kafka"]
+            },
+            {
+              "id": "de-m17",
+              "title": "Build an end-to-end pipeline capstone and a strong resume",
+              "status": "remaining",
+              "requiredChecklistIds": ["de-capstone", "de-resume"]
+            },
+            {
+              "id": "de-m18",
+              "title": "Prepare for SQL, data modelling and pipeline design interviews",
+              "status": "remaining",
+              "requiredChecklistIds": ["de-interview"]
+            }
+          ],
+          "skillsToLearn": ["Spark", "dbt", "Cloud warehouse", "Data quality", "Kafka basics", "DSA basics"],
+          "projectsToBuild": ["End-to-end pipeline with a dashboard on top"]
+        }
+      ],
+      "skillGaps": [
+        { "skill": "SQL (advanced)", "currentLevel": 2, "requiredLevel": 4, "priority": "high" },
+        { "skill": "Data modelling", "currentLevel": 1, "requiredLevel": 4, "priority": "high" },
+        { "skill": "Linux and shell", "currentLevel": 1, "requiredLevel": 3, "priority": "medium" },
+        { "skill": "Python for pipelines", "currentLevel": 3, "requiredLevel": 4, "priority": "medium" },
+        { "skill": "Orchestration (Airflow)", "currentLevel": 0, "requiredLevel": 3, "priority": "high" },
+        { "skill": "Docker", "currentLevel": 0, "requiredLevel": 3, "priority": "medium" },
+        { "skill": "Spark and big data", "currentLevel": 0, "requiredLevel": 3, "priority": "medium" },
+        { "skill": "Cloud data warehouse", "currentLevel": 0, "requiredLevel": 3, "priority": "medium" }
+      ],
+      "projects": [
+        {
+          "name": "CSV to PostgreSQL ETL",
+          "description": "Read messy CSV files, clean them and load them into PostgreSQL",
+          "techStack": ["Python", "Pandas", "PostgreSQL"],
+          "difficulty": "Beginner",
+          "estimatedHours": 20
+        },
+        {
+          "name": "Sales data warehouse",
+          "description": "Design a star schema and write SQL transformations for sales reports",
+          "techStack": ["PostgreSQL", "SQL"],
+          "difficulty": "Intermediate",
+          "estimatedHours": 30
+        },
+        {
+          "name": "Scheduled API pipeline",
+          "description": "Pull data from a public API daily into a database with retries and logging",
+          "techStack": ["Python", "Airflow", "Docker", "PostgreSQL"],
+          "difficulty": "Intermediate",
+          "estimatedHours": 40
+        },
+        {
+          "name": "End-to-end pipeline with dashboard",
+          "description": "Batch pipeline with PySpark, quality checks and a dashboard on top",
+          "techStack": ["PySpark", "dbt", "BigQuery or PostgreSQL"],
+          "difficulty": "Advanced",
+          "estimatedHours": 70
+        }
+      ],
+      "firstMonthPlan": [
+        {
+          "week": 1,
+          "title": "Linux and Git",
+          "goals": ["Navigate the shell, files, permissions", "Git branching", "Install PostgreSQL"],
+          "dailyHours": 1.5,
+          "deliverable": "Shell cheat sheet and a GitHub repo with 3 commits"
+        },
+        {
+          "week": 2,
+          "title": "SQL depth",
+          "goals": ["Joins, subqueries and the first window functions on a sample database"],
+          "dailyHours": 1.5,
+          "deliverable": "25 solved SQL queries in a notebook"
+        },
+        {
+          "week": 3,
+          "title": "Python for data files",
+          "goals": ["Read CSV and JSON, call an API with requests, write to a database"],
+          "dailyHours": 1.5,
+          "deliverable": "Script that downloads API data and stores it in PostgreSQL"
+        },
+        {
+          "week": 4,
+          "title": "First ETL",
+          "goals": ["Combine the steps into one ETL script with logging and error handling"],
+          "dailyHours": 1.5,
+          "deliverable": "CSV to PostgreSQL ETL project with README"
+        }
+      ],
+      "resources": [
+        { "title": "Data Engineering Zoomcamp", "url": "https://github.com/DataTalksClub/data-engineering-zoomcamp", "type": "Course", "isFree": true },
+        { "title": "Apache Airflow Documentation", "url": "https://airflow.apache.org/docs/", "type": "Documentation", "isFree": true },
+        { "title": "Apache Spark Documentation", "url": "https://spark.apache.org/docs/latest/", "type": "Documentation", "isFree": true },
+        { "title": "dbt Documentation", "url": "https://docs.getdbt.com/", "type": "Documentation", "isFree": true },
+        { "title": "BigQuery Documentation", "url": "https://cloud.google.com/bigquery/docs", "type": "Documentation", "isFree": true },
+        { "title": "Apache Kafka Documentation", "url": "https://kafka.apache.org/documentation/", "type": "Documentation", "isFree": true },
+        { "title": "PostgreSQL Documentation", "url": "https://www.postgresql.org/docs/", "type": "Documentation", "isFree": true },
+        { "title": "Kaggle Learn (SQL)", "url": "https://www.kaggle.com/learn", "type": "Course", "isFree": true },
+        { "title": "NPTEL Courses", "url": "https://nptel.ac.in/", "type": "Course", "isFree": true }
+      ],
+      "checklist": [
+        { "id": "de-python", "label": "Python scripts with file handling", "category": "Programming", "skill": "Python", "levelGained": 3, "stage": "foundation", "checked": true },
+        { "id": "de-sql-basic", "label": "SELECT, JOIN, GROUP BY", "category": "Database", "skill": "SQL", "levelGained": 3, "stage": "foundation", "checked": true },
+        { "id": "de-linux", "label": "Linux command line and shell basics", "category": "Tools", "skill": "Linux", "levelGained": 2, "stage": "foundation", "checked": false },
+        { "id": "de-git", "label": "Git branching and GitHub", "category": "Tools", "skill": "Git", "levelGained": 3, "stage": "foundation", "checked": true },
+        { "id": "de-modelling", "label": "Keys, normalisation and table design", "category": "Database", "skill": "Data modelling", "levelGained": 3, "stage": "foundation", "checked": false },
+        { "id": "de-sql-adv", "label": "Window functions, CTEs, indexes", "category": "Database", "skill": "SQL", "levelGained": 4, "stage": "build", "checked": false },
+        { "id": "de-postgres", "label": "Set up and load PostgreSQL", "category": "Database", "skill": "PostgreSQL", "levelGained": 3, "stage": "build", "checked": false },
+        { "id": "de-etl", "label": "Write an ETL script with logging", "category": "Pipelines", "skill": "ETL", "levelGained": 3, "stage": "build", "checked": false },
+        { "id": "de-star", "label": "Design a star schema", "category": "Database", "skill": "Data modelling", "levelGained": 4, "stage": "build", "checked": false },
+        { "id": "de-docker", "label": "Containerise a pipeline with Docker", "category": "DevOps", "skill": "Docker", "levelGained": 3, "stage": "build", "checked": false },
+        { "id": "de-airflow", "label": "Schedule workflows with Airflow", "category": "Orchestration", "skill": "Airflow", "levelGained": 3, "stage": "specialize", "checked": false },
+        { "id": "de-spark", "label": "Process large data with PySpark", "category": "Big data", "skill": "Spark", "levelGained": 3, "stage": "specialize", "checked": false },
+        { "id": "de-dbt", "label": "Build tested models with dbt", "category": "Transformation", "skill": "dbt", "levelGained": 3, "stage": "specialize", "checked": false },
+        { "id": "de-intern", "label": "Data internship or open-source data project", "category": "Experience", "skill": "Teamwork", "levelGained": 3, "stage": "specialize", "checked": false },
+        { "id": "de-cloud", "label": "Load and query a cloud data warehouse", "category": "Cloud", "skill": "BigQuery or similar", "levelGained": 3, "stage": "job_ready", "checked": false },
+        { "id": "de-quality", "label": "Data quality checks and monitoring", "category": "Quality", "skill": "Data quality", "levelGained": 3, "stage": "job_ready", "checked": false },
+        { "id": "de-kafka", "label": "Streaming basics with Kafka", "category": "Streaming", "skill": "Kafka", "levelGained": 2, "stage": "job_ready", "checked": false },
+        { "id": "de-capstone", "label": "End-to-end pipeline capstone with diagram and README", "category": "Projects", "skill": "Data engineering", "levelGained": 4, "stage": "job_ready", "checked": false },
+        { "id": "de-resume", "label": "Resume with 3 pipeline projects", "category": "Career", "skill": "Career", "levelGained": 3, "stage": "job_ready", "checked": false },
+        { "id": "de-interview", "label": "SQL, data modelling and pipeline design interviews", "category": "Career", "skill": "Interviews", "levelGained": 3, "stage": "job_ready", "checked": false }
+      ]
+    }
+  ],
+  "sampleStudentProfile": {
+    "careerId": "CSP-1042",
+    "name": "Aarav Sharma",
+    "college": "Engineering College",
+    "branch": "CSE",
+    "yearOfStudy": 2,
+    "cgpa": 7.8,
+    "hoursPerWeek": 10,
+    "skills": [
+      { "name": "Python", "level": "Intermediate" },
+      { "name": "HTML/CSS", "level": "Beginner" },
+      { "name": "C++", "level": "Beginner" },
+      { "name": "SQL", "level": "Beginner" },
+      { "name": "Git", "level": "Beginner" }
+    ],
+    "interests": ["Web apps", "AI", "Data analysis"],
+    "tenthPercentage": 91.0,
+    "twelfthPercentage": 88.5,
+    "certifications": [],
+    "projects": [
+      {
+        "id": "p-calc",
+        "name": "Calculator app",
+        "description": "Interactive calculator built with HTML, CSS and JavaScript",
+        "techStack": ["HTML", "CSS", "JavaScript"]
+      },
+      {
+        "id": "p-todo",
+        "name": "To-do app",
+        "description": "Task management application with local state handling",
+        "techStack": ["HTML", "CSS", "JavaScript"]
+      }
+    ],
+    "internships": [],
+    "achievements": ["Participated in one college hackathon"]
+  },
+  "readinessQuestions": [
+    {
+      "id": "q-py-1",
+      "skill": "Python",
+      "question": "What does len([1, 2, 3]) return?",
+      "options": ["2", "3", "4", "Error"],
+      "correctOptionIndex": 1,
+      "explanation": "len counts items in the list, so the answer is 3."
+    },
+    {
+      "id": "q-py-2",
+      "skill": "Python",
+      "question": "Which structure stores unique items?",
+      "options": ["list", "tuple", "set", "string"],
+      "correctOptionIndex": 2,
+      "explanation": "A set keeps only unique values."
+    },
+    {
+      "id": "q-py-3",
+      "skill": "Python",
+      "question": "What is the output of print(type({}))?",
+      "options": ["list", "dict", "set", "tuple"],
+      "correctOptionIndex": 1,
+      "explanation": "Empty curly braces create a dictionary."
+    },
+    {
+      "id": "q-html-1",
+      "skill": "HTML/CSS",
+      "question": "Which tag is best for the main navigation links?",
+      "options": ["div", "nav", "span", "section"],
+      "correctOptionIndex": 1,
+      "explanation": "nav is the semantic element for navigation."
+    },
+    {
+      "id": "q-css-1",
+      "skill": "HTML/CSS",
+      "question": "Which CSS property makes a flex container's items sit in a row or column?",
+      "options": ["align-items", "flex-direction", "display-mode", "position"],
+      "correctOptionIndex": 1,
+      "explanation": "flex-direction sets the main axis."
+    },
+    {
+      "id": "q-sql-1",
+      "skill": "SQL",
+      "question": "Which clause filters rows after grouping?",
+      "options": ["WHERE", "HAVING", "ORDER BY", "LIMIT"],
+      "correctOptionIndex": 1,
+      "explanation": "HAVING filters groups, WHERE filters rows before grouping."
+    },
+    {
+      "id": "q-sql-2",
+      "skill": "SQL",
+      "question": "Which JOIN returns all rows from the left table even without a match?",
+      "options": ["INNER", "LEFT", "CROSS", "SELF"],
+      "correctOptionIndex": 1,
+      "explanation": "LEFT JOIN keeps all left rows."
+    },
+    {
+      "id": "q-git-1",
+      "skill": "Git",
+      "question": "Which command saves staged changes to history?",
+      "options": ["git push", "git commit", "git add", "git pull"],
+      "correctOptionIndex": 1,
+      "explanation": "git commit records staged changes locally."
+    },
+    {
+      "id": "q-git-2",
+      "skill": "Git",
+      "question": "What does git clone do?",
+      "options": ["Creates a branch", "Copies a remote repository locally", "Deletes history", "Merges branches"],
+      "correctOptionIndex": 1,
+      "explanation": "It downloads a copy of the repository."
+    },
+    {
+      "id": "q-cpp-1",
+      "skill": "C++",
+      "question": "Which symbol is used to access the address of a variable?",
+      "options": ["*", "&", "#", "@"],
+      "correctOptionIndex": 1,
+      "explanation": "& returns the address of a variable."
+    },
+    {
+      "id": "q-short-1",
+      "skill": "Python",
+      "type": "short_answer",
+      "question": "In one or two sentences, explain the difference between a list and a tuple.",
+      "explanation": "Lists are mutable, tuples are immutable."
+    },
+    {
+      "id": "q-short-2",
+      "skill": "SQL",
+      "type": "short_answer",
+      "question": "In one or two sentences, explain what a primary key is.",
+      "explanation": "A unique identifier for each row in a table."
+    },
+    {
+      "id": "q-linux-1",
+      "skill": "Linux",
+      "question": "Which command lists the files in the current directory?",
+      "options": ["cd", "ls", "mv", "rm"],
+      "correctOptionIndex": 1,
+      "explanation": "ls lists directory contents."
+    },
+    {
+      "id": "q-de-1",
+      "skill": "Data Engineering",
+      "question": "What does ETL stand for?",
+      "options": ["Extract, Transform, Load", "Evaluate, Test, Launch", "Export, Transfer, Link", "Edit, Test, Log"],
+      "correctOptionIndex": 0,
+      "explanation": "ETL moves data from sources, cleans it and loads it into a target."
+    },
+    {
+      "id": "q-de-2",
+      "skill": "Data modelling",
+      "question": "In a star schema, what does the central table store?",
+      "options": ["Descriptions of customers", "Facts (measurable events such as sales)", "User passwords", "Log files"],
+      "correctOptionIndex": 1,
+      "explanation": "The fact table holds measurable events, linked to dimension tables."
+    },
+    {
+      "id": "q-de-3",
+      "skill": "Airflow",
+      "question": "What does Apache Airflow mainly do?",
+      "options": ["Schedules and monitors workflows as DAGs", "Draws charts", "Trains neural networks", "Hosts websites"],
+      "correctOptionIndex": 0,
+      "explanation": "Airflow orchestrates tasks in directed acyclic graphs."
+    },
+    {
+      "id": "q-de-4",
+      "skill": "Docker",
+      "question": "What does a Docker image contain?",
+      "options": ["Only the database", "The app code and its dependencies, packaged to run the same everywhere", "Only a virtual screen", "Browser history"],
+      "correctOptionIndex": 1,
+      "explanation": "An image is a packaged, repeatable runtime for an app."
+    },
+    {
+      "id": "q-de-5",
+      "skill": "Spark",
+      "question": "What is PySpark mainly used for?",
+      "options": ["Designing logos", "Writing CSS", "Processing large datasets in parallel across machines", "Sending emails"],
+      "correctOptionIndex": 2,
+      "explanation": "Spark distributes data processing across a cluster."
+    },
+    {
+      "id": "q-de-6",
+      "skill": "SQL",
+      "question": "Which function numbers rows within a group without collapsing them?",
+      "options": ["COUNT(*)", "ROW_NUMBER() OVER (...)", "SUM()", "DISTINCT"],
+      "correctOptionIndex": 1,
+      "explanation": "Window functions keep every row, unlike aggregate functions with GROUP BY."
+    },
+    {
+      "id": "q-ds-1",
+      "skill": "Statistics",
+      "question": "Which measure is least affected by extreme outliers?",
+      "options": ["Mean", "Median", "Range", "Variance"],
+      "correctOptionIndex": 1,
+      "explanation": "The median depends on the middle value, not on extremes."
+    },
+    {
+      "id": "q-ds-2",
+      "skill": "Statistics",
+      "question": "A p-value of 0.01 in a hypothesis test most closely suggests what?",
+      "options": ["The null hypothesis is certainly true", "The result would be unlikely if the null hypothesis were true", "The sample is too small", "The data is wrong"],
+      "correctOptionIndex": 1,
+      "explanation": "A low p-value is evidence against the null hypothesis, not proof of anything."
+    }
+  ],
+  "mentorResponses": {
+    "best_path": "Based on your profile, Full Stack Developer is the strongest fit right now, mainly because your web basics are ahead of your maths. Data Scientist is a close second if you enjoy analysing data. AI/ML Engineer is realistic too, but plan for 2 to 3 months of maths and statistics first. Data Engineer suits you if you enjoy building the systems that move and clean data, but it needs strong SQL, Linux and data modelling first. Pick one path to focus on for the next 3 months, and revisit after your first project.",
+    "learn_first": "Focus on your first-month plan. Spend the first two weeks strengthening the basics for your top path, and ship one small project by the end of the month. Tick items on your checklist as you finish them so your roadmap stays accurate.",
+    "internship": "Build 2 to 3 small projects on GitHub, keep your resume to one page, and apply early on platforms such as LinkedIn, Internshala and your college placement cell. Also contact seniors and alumni for referrals. Showing a live project link matters more than listing skills.",
+    "roadmap_review": "Keep the foundation and build stages in the order shown, and postpone advanced topics such as MLOps or system design until year 4. If you are short on time, cut the second project in each stage, not the fundamentals.",
+    "ds_vs_de": "A Data Scientist uses data to answer questions and build models, so statistics, dashboards and communication matter most. A Data Engineer builds the pipelines and warehouses that deliver reliable data, so SQL, Linux, Docker, Airflow and Spark matter most. If you like finding insights, choose Data Scientist. If you like building and maintaining systems, choose Data Engineer. The first-year basics (Python and SQL) are the same, so you do not need to decide for a few months.",
+    "default": "I can help with your roadmap, skills and projects. Try asking which skill to learn next, how to prepare for internships, or how to balance this with your semester."
+  }
+}

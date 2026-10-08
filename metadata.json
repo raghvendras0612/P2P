@@ -1,0 +1,6 @@
+{
+  "name": "Career Path Simulator",
+  "description": "Simulate three engineering career paths (Full Stack, AI/ML, Data Science) with customized roadmaps, skill readiness assessments, and AI mentoring for Indian engineering students.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
