@@ -1,0 +1,783 @@
+{
+  "paths": [
+    {
+      "path_slug": "full-stack-developer",
+      "title": "Full Stack Software Development Engineer (Web / SaaS)",
+      "summary": "Focuses on architecting scalable modern web applications from responsive frontends to distributed backends, RESTful microservices, relational databases, and cloud deployments.",
+      "fit_score": 88,
+      "fit_reasoning": "Strong foundational proficiency in Python, JavaScript, and database concepts matches the requirements of Indian product startups and mid-size SaaS firms.",
+      "india_market_notes": {
+        "typical_roles": [
+          "Software Development Engineer 1 (SDE-1)",
+          "Associate Full Stack Developer",
+          "Graduate Engineer Trainee (GET)"
+        ],
+        "company_types": [
+          "Fintech & Consumer Startups",
+          "Product MNCs (Bengaluru / Hyderabad / Pune)",
+          "Tier-1 IT Consulting Firms"
+        ],
+        "salary_range_lpa": "6.5 - 14 LPA",
+        "is_approximate": true,
+        "demand_outlook": "Consistently highest fresher hiring volume across Indian tech hubs with heavy emphasis on DSA and hands-on full-stack projects."
+      },
+      "yearly_milestones": [
+        {
+          "label": "Year 3 (Pre-final Year)",
+          "goals": [
+            "Master intermediate Data Structures & Algorithms",
+            "Build full-stack CRUD applications with authentication and relational database models",
+            "Prepare for 7th-semester campus placement drives"
+          ],
+          "skills_to_learn": [
+            "FastAPI / Express.js",
+            "PostgreSQL & Indexing",
+            "Docker containerization",
+            "React with TypeScript"
+          ],
+          "projects": [
+            "Distributed Event-Driven E-Commerce API",
+            "Collaborative Real-time Kanban Workspace"
+          ],
+          "target_activities": [
+            "Solve 150+ medium LeetCode/GFG problems",
+            "Participate in Smart India Hackathon or college hackathons",
+            "Apply for summer off-campus internships"
+          ],
+          "checkpoints": [
+            "Pass campus placement mock coding rounds in under 45 minutes",
+            "GitHub repository with clean README, CI test workflows, and live URL"
+          ]
+        },
+        {
+          "label": "Year 4 (Final Year)",
+          "goals": [
+            "Convert campus placement opportunities or secure off-campus product offers",
+            "Study High-Level and Low-Level System Design fundamentals",
+            "Complete capstone final year project"
+          ],
+          "skills_to_learn": [
+            "Redis Caching",
+            "System Design Patterns",
+            "CI/CD with GitHub Actions",
+            "Kubernetes basics"
+          ],
+          "projects": [
+            "High-throughput URL shortener with rate-limiting and Redis cache",
+            "Production-ready B.Tech capstone platform"
+          ],
+          "target_activities": [
+            "Target Tier-1 & Tier-2 campus placement interviews",
+            "Network with alumni on LinkedIn for employee referrals"
+          ],
+          "checkpoints": [
+            "Secure acceptable full-time SDE offer prior to 8th semester",
+            "Maintain minimum 7.5 CGPA required for corporate shortlisting cutoffs"
+          ]
+        },
+        {
+          "label": "First 1-2 Years Post-Graduation",
+          "goals": [
+            "Transition from Junior SDE to autonomous mid-level engineer",
+            "Own microservices in production with on-call monitoring"
+          ],
+          "skills_to_learn": [
+            "Distributed tracing & observability (OpenTelemetry)",
+            "Advanced database sharding",
+            "Cloud infrastructure as code (Terraform)"
+          ],
+          "projects": [
+            "Production incident resolution runbooks",
+            "Zero-downtime service migration"
+          ],
+          "target_activities": [
+            "Contribute to key open source projects",
+            "Lead technical design reviews inside engineering team"
+          ],
+          "checkpoints": [
+            "Promotion to SDE-2 or successful lateral transition with 30-50% increment"
+          ]
+        }
+      ],
+      "skill_gaps": [
+        {
+          "skill": "Data Structures & Algorithms",
+          "current_level": 2,
+          "required_level": 4,
+          "priority": "high",
+          "why_it_matters": "Primary elimination round in Indian on-campus technical assessments."
+        },
+        {
+          "skill": "FastAPI & Async Python",
+          "current_level": 2,
+          "required_level": 4,
+          "priority": "high",
+          "why_it_matters": "Demonstrates modern high-throughput API architecture over legacy synchronous code."
+        },
+        {
+          "skill": "PostgreSQL & Database Optimization",
+          "current_level": 2,
+          "required_level": 3,
+          "priority": "high",
+          "why_it_matters": "Interviewers scrutinize schema design, indexes, and ACID transaction boundaries."
+        },
+        {
+          "skill": "React & TypeScript",
+          "current_level": 1,
+          "required_level": 3,
+          "priority": "medium",
+          "why_it_matters": "Full-stack roles expect component lifecycle understanding and type safety."
+        },
+        {
+          "skill": "Docker & Containerization",
+          "current_level": 1,
+          "required_level": 3,
+          "priority": "medium",
+          "why_it_matters": "Industry projects require reproducible local setups and containerized CI/CD builds."
+        },
+        {
+          "skill": "System Design & Caching (Redis)",
+          "current_level": 1,
+          "required_level": 3,
+          "priority": "medium",
+          "why_it_matters": "Distinguishes strong candidates during round 2/3 technical interviews."
+        },
+        {
+          "skill": "Git & Collaborative Workflows",
+          "current_level": 2,
+          "required_level": 4,
+          "priority": "low",
+          "why_it_matters": "Required for day-one team readiness and pull request code reviews."
+        }
+      ],
+      "projects_to_build": [
+        {
+          "title": "Real-Time Collaborative Code Editor",
+          "description": "Multiplayer coding platform with WebSockets, syntax highlighting, and conflict resolution.",
+          "tech_stack": "React, FastAPI, WebSockets, PostgreSQL, Redis",
+          "difficulty": "Intermediate",
+          "estimated_weeks": 4,
+          "what_it_proves": "Proves concurrency handling, state synchronization, and socket lifecycle management.",
+          "stretch_goal": "Integrate isolated Docker sandbox for sandboxed code execution."
+        },
+        {
+          "title": "Automated Campus Placement Portal",
+          "description": "Role-based recruiting platform for student eligibility checks, resume parsing, and interview scheduling.",
+          "tech_stack": "FastAPI, React, PostgreSQL, Tailwind CSS",
+          "difficulty": "Beginner",
+          "estimated_weeks": 3,
+          "what_it_proves": "Proves clean RESTful API design, JWT authentication, and relational data modeling.",
+          "stretch_goal": "Export ATS-friendly single-page PDF resumes with automated scoring."
+        },
+        {
+          "title": "High-Throughput Distributed Rate Limiter",
+          "description": "Sliding-window rate limiting middleware with distributed Redis backing.",
+          "tech_stack": "Python, Redis, Docker, Pytest",
+          "difficulty": "Advanced",
+          "estimated_weeks": 3,
+          "what_it_proves": "Proves deep systems thinking, benchmarking, and concurrency guarantees under load."
+        }
+      ],
+      "first_month_plan": {
+        "weeks": [
+          {
+            "week_number": 1,
+            "theme": "DSA Baseline & Python Deep Dive",
+            "daily_tasks": [
+              "Solve 2 LeetCode array/hashmap problems daily",
+              "Review Python type hints, async/await event loops, and generators",
+              "Set up clean GitHub repository structure for placement prep"
+            ],
+            "resources": [
+              "LeetCode 75 Curated List",
+              "Official Python Documentation (asyncio tutorial)",
+              "NeetCode YouTube channel"
+            ],
+            "end_of_week_outcome": "14 DSA problems solved and committed to GitHub with explanatory notes."
+          },
+          {
+            "week_number": 2,
+            "theme": "Production Backend Architecture with FastAPI",
+            "daily_tasks": [
+              "Build 3-tier FastAPI service with Pydantic v2 validation",
+              "Configure SQLAlchemy 2.x declarative models and Alembic migrations",
+              "Implement JWT authentication with password hashing"
+            ],
+            "resources": [
+              "FastAPI Official Documentation & Tutorial",
+              "SQLAlchemy 2.0 Official Architecture Guide"
+            ],
+            "end_of_week_outcome": "Fully functional, test-covered REST API with SQLite/PostgreSQL persistence."
+          },
+          {
+            "week_number": 3,
+            "theme": "Frontend Integration & State Management",
+            "daily_tasks": [
+              "Scaffold React + Vite + TypeScript application",
+              "Connect frontend to backend API using TanStack Query",
+              "Handle loading, empty, and error states gracefully"
+            ],
+            "resources": [
+              "React Official Docs (react.dev)",
+              "TanStack Query v5 Documentation"
+            ],
+            "end_of_week_outcome": "End-to-end interactive web application communicating with local backend."
+          },
+          {
+            "week_number": 4,
+            "theme": "Dockerization, Testing & Deployment",
+            "daily_tasks": [
+              "Write unit and integration tests with Pytest and Vitest",
+              "Write multi-stage Dockerfile and docker-compose.yml",
+              "Deploy backend to Render/Fly.io and frontend to Vercel"
+            ],
+            "resources": [
+              "Docker Official Getting Started Guide",
+              "GitHub Actions CI/CD Documentation"
+            ],
+            "end_of_week_outcome": "Live public application with continuous integration and verified test suite."
+          }
+        ]
+      },
+      "resources": [
+        {
+          "name": "NeetCode DSA Roadmap",
+          "type": "Interactive Platform",
+          "cost": "Free",
+          "description": "Structured problem list categorized by data structure pattern."
+        },
+        {
+          "name": "FastAPI Official Documentation",
+          "type": "Official Documentation",
+          "cost": "Free",
+          "description": "Exemplary framework documentation covering async programming, dependency injection, and security."
+        },
+        {
+          "name": "Full Stack Open (University of Helsinki)",
+          "type": "Course",
+          "cost": "Free",
+          "description": "World-class open curriculum for modern JavaScript/TypeScript and React development."
+        }
+      ],
+      "risks_and_tradeoffs": [
+        "Heavy saturation at the junior frontend level; deep backend and DSA depth is essential to stand out.",
+        "Balancing college internal semester exams with intensive LeetCode practice requires strict schedule discipline."
+      ]
+    },
+    {
+      "path_slug": "devops-cloud-engineer",
+      "title": "Cloud Infrastructure & DevOps Engineer",
+      "summary": "Specializes in automation, continuous deployment pipelines, cloud platform architecture (AWS/GCP), container orchestration, and site reliability engineering.",
+      "fit_score": 81,
+      "fit_reasoning": "A solid grasp of Linux, networking, and scripting provides an excellent platform for cloud automation and DevOps roles.",
+      "india_market_notes": {
+        "typical_roles": [
+          "Junior Cloud Engineer",
+          "Associate Site Reliability Engineer (SRE)",
+          "DevOps Trainee"
+        ],
+        "company_types": [
+          "Cloud Managed Service Providers",
+          "Enterprise Tech Centers (GCCs in India)",
+          "FinTech Startups"
+        ],
+        "salary_range_lpa": "6 - 13 LPA",
+        "is_approximate": true,
+        "demand_outlook": "Rapidly growing demand across Global Capability Centers (GCCs) in India seeking cloud automation talent."
+      },
+      "yearly_milestones": [
+        {
+          "label": "Year 3 (Pre-final Year)",
+          "goals": [
+            "Master Linux administration, shell scripting, and computer networking",
+            "Gain proficiency in Docker and GitHub Actions CI/CD"
+          ],
+          "skills_to_learn": [
+            "Linux Bash scripting",
+            "Docker & Compose",
+            "GitHub Actions",
+            "AWS Fundamentals"
+          ],
+          "projects": [
+            "Multi-stage CI/CD pipeline with automated vulnerability scanning",
+            "Nginx reverse proxy and SSL automation"
+          ],
+          "target_activities": [
+            "Earn AWS Certified Cloud Practitioner or Solutions Architect Associate",
+            "Contribute to DevOps community open source tooling"
+          ],
+          "checkpoints": [
+            "Automated push-to-deploy workflow executing in GitHub Actions"
+          ]
+        },
+        {
+          "label": "Year 4 (Final Year)",
+          "goals": [
+            "Learn Kubernetes container orchestration and Terraform Infrastructure-as-Code",
+            "Target cloud engineering campus and off-campus roles"
+          ],
+          "skills_to_learn": [
+            "Terraform",
+            "Kubernetes (K8s)",
+            "Prometheus & Grafana"
+          ],
+          "projects": [
+            "Production Kubernetes cluster deployment with Helm charts",
+            "Terraform-provisioned 3-tier cloud architecture"
+          ],
+          "target_activities": [
+            "Apply to GCC graduate cloud programs and DevOps openings"
+          ],
+          "checkpoints": [
+            "Working Terraform configuration managing reproducible cloud infrastructure"
+          ]
+        },
+        {
+          "label": "First 1-2 Years Post-Graduation",
+          "goals": [
+            "Achieve full production autonomy managing enterprise cloud estates",
+            "Implement Zero-Trust security and cost optimization policies"
+          ],
+          "skills_to_learn": [
+            "Service Mesh (Istio)",
+            "FinOps cloud cost governance",
+            "Disaster recovery automation"
+          ],
+          "projects": [
+            "Cloud cost reduction initiative saving 20% on monthly compute"
+          ],
+          "target_activities": [
+            "Obtain Certified Kubernetes Administrator (CKA)"
+          ],
+          "checkpoints": [
+            "Zero high-severity outages attributable to infrastructure configuration errors"
+          ]
+        }
+      ],
+      "skill_gaps": [
+        {
+          "skill": "Linux Systems & CLI Mastery",
+          "current_level": 2,
+          "required_level": 4,
+          "priority": "high",
+          "why_it_matters": "Fundamental foundation for all servers, containers, and deployment targets."
+        },
+        {
+          "skill": "Docker & Container Architecture",
+          "current_level": 1,
+          "required_level": 4,
+          "priority": "high",
+          "why_it_matters": "Essential for packaging services and local simulation environments."
+        },
+        {
+          "skill": "Computer Networks (TCP/IP, DNS, HTTP/S)",
+          "current_level": 2,
+          "required_level": 4,
+          "priority": "high",
+          "why_it_matters": "Frequently grilled in cloud troubleshooting and reliability interviews."
+        },
+        {
+          "skill": "CI/CD Pipeline Engineering",
+          "current_level": 1,
+          "required_level": 3,
+          "priority": "high",
+          "why_it_matters": "Core day-to-day responsibility for DevOps engineers."
+        },
+        {
+          "skill": "Infrastructure as Code (Terraform)",
+          "current_level": 0,
+          "required_level": 3,
+          "priority": "medium",
+          "why_it_matters": "Industry standard for automated cloud resource provisioning."
+        },
+        {
+          "skill": "Kubernetes Orchestration",
+          "current_level": 0,
+          "required_level": 3,
+          "priority": "medium",
+          "why_it_matters": "Differentiates entry-level candidates applying to top product firms."
+        },
+        {
+          "skill": "Python/Bash Automation Scripting",
+          "current_level": 2,
+          "required_level": 3,
+          "priority": "medium",
+          "why_it_matters": "Required to automate operational tasks and glue services together."
+        }
+      ],
+      "projects_to_build": [
+        {
+          "title": "Automated Multi-Environment GitOps Pipeline",
+          "description": "Continuous delivery pipeline using GitHub Actions, container scanning, and automated rollback.",
+          "tech_stack": "Docker, GitHub Actions, Trivy, Bash, AWS S3",
+          "difficulty": "Intermediate",
+          "estimated_weeks": 4,
+          "what_it_proves": "Proves understanding of secure supply chain security and deployment mechanics."
+        },
+        {
+          "title": "Cloud Infrastructure Provisioner via Terraform",
+          "description": "Complete VPC, subnets, security groups, and auto-scaling EC2/ECS infrastructure managed through declarative code.",
+          "tech_stack": "Terraform, AWS Free Tier, Terratest",
+          "difficulty": "Intermediate",
+          "estimated_weeks": 3,
+          "what_it_proves": "Proves mastery of IaC best practices, state management, and modularization."
+        },
+        {
+          "title": "Observability Stack with Prometheus and Grafana",
+          "description": "Full monitoring setup collecting metrics, alerting on threshold breaches, and visualizing application health.",
+          "tech_stack": "Prometheus, Grafana, Node Exporter, Docker",
+          "difficulty": "Beginner",
+          "estimated_weeks": 2,
+          "what_it_proves": "Proves operational mindset and telemetry diagnostics."
+        }
+      ],
+      "first_month_plan": {
+        "weeks": [
+          {
+            "week_number": 1,
+            "theme": "Linux Internals & Bash Scripting",
+            "daily_tasks": [
+              "Set up Ubuntu/Debian environment via WSL2 or virtual machine",
+              "Practice file permissions, process inspection (ps, top, systemctl), and log parsing (grep, awk, sed)",
+              "Write automated shell scripts for backup and health monitoring"
+            ],
+            "resources": [
+              "Linux Journey (linuxjourney.com)",
+              "OverTheWire Bandit Wargames"
+            ],
+            "end_of_week_outcome": "Completed Bandit levels 1-20 and authored 3 automated Linux administration scripts."
+          },
+          {
+            "week_number": 2,
+            "theme": "Computer Networking for Cloud",
+            "daily_tasks": [
+              "Deep dive into CIDR notation, subnetting, DNS resolution, and TCP handshakes",
+              "Use tcpdump, curl, and dig to diagnose simulated network failures",
+              "Configure Nginx reverse proxy with virtual hosts"
+            ],
+            "resources": [
+              "Professor Messer Network+ Videos (YouTube)",
+              "Nginx Official Beginner's Guide"
+            ],
+            "end_of_week_outcome": "Configured local Nginx reverse proxy routing multiple virtual hosts with custom headers."
+          },
+          {
+            "week_number": 3,
+            "theme": "Dockerization Mastery",
+            "daily_tasks": [
+              "Containerize Python and Node.js sample applications",
+              "Optimize Docker layers for minimal image footprint",
+              "Orchestrate multi-container environments using docker-compose"
+            ],
+            "resources": [
+              "Docker Curriculum (docker-curriculum.com)",
+              "Docker Best Practices Guide"
+            ],
+            "end_of_week_outcome": "Multi-container web application stack running via docker-compose with volume persistence."
+          },
+          {
+            "week_number": 4,
+            "theme": "CI/CD Pipeline Construction",
+            "daily_tasks": [
+              "Create GitHub Actions workflows triggered on push and pull requests",
+              "Automate linting, unit test execution, and image building",
+              "Push images to GitHub Container Registry (GHCR)"
+            ],
+            "resources": [
+              "GitHub Actions Documentation",
+              "Martin Fowler Continuous Integration Guide"
+            ],
+            "end_of_week_outcome": "Production CI pipeline with status badges and automated image publishing."
+          }
+        ]
+      },
+      "resources": [
+        {
+          "name": "Linux Journey",
+          "type": "Interactive Platform",
+          "cost": "Free",
+          "description": "Structured, free interactive introduction to Linux command line and systems."
+        },
+        {
+          "name": "KodeKloud Community Challenges",
+          "type": "Interactive Platform",
+          "cost": "Free",
+          "description": "Hands-on free sandbox challenges covering Docker, Kubernetes, and Linux basics."
+        },
+        {
+          "name": "AWS Skill Builder Free Tier",
+          "type": "Course",
+          "cost": "Free",
+          "description": "Official foundational training provided by Amazon Web Services."
+        }
+      ],
+      "risks_and_tradeoffs": [
+        "Fewer campus placement drives specifically hire freshers for pure DevOps compared to SDE; often requires entering via SDE/GET and moving internally.",
+        "Managing cloud accounts requires careful budgeting to avoid unexpected cloud provider charges on personal cards."
+      ]
+    },
+    {
+      "path_slug": "data-engineer",
+      "title": "Data Engineering & Pipeline Architect",
+      "summary": "Focuses on designing, building, and operating resilient data pipelines, distributed extract-transform-load (ETL) workflows, data warehousing, and analytics infrastructure.",
+      "fit_score": 74,
+      "fit_reasoning": "Background in Python and databases provides a gateway, though advanced SQL, distributed processing, and warehousing require focused preparation.",
+      "india_market_notes": {
+        "typical_roles": [
+          "Junior Data Engineer",
+          "ETL Developer",
+          "Data Analyst / Analytics Engineer"
+        ],
+        "company_types": [
+          "FinTech & E-commerce",
+          "Analytics Consulting Firms",
+          "Global In-house Centers (GICs)"
+        ],
+        "salary_range_lpa": "5.5 - 12 LPA",
+        "is_approximate": true,
+        "demand_outlook": "High growth as enterprise data volumes surge across Indian e-commerce, banking, and SaaS."
+      },
+      "yearly_milestones": [
+        {
+          "label": "Year 3 (Pre-final Year)",
+          "goals": [
+            "Attain mastery in complex SQL queries, window functions, and schema normalization",
+            "Learn Python data libraries (Pandas, Polars) and automated ETL scripting"
+          ],
+          "skills_to_learn": [
+            "Advanced PostgreSQL",
+            "Python data processing (Pandas)",
+            "Data modeling (Star & Snowflake schemas)"
+          ],
+          "projects": [
+            "Automated ETL pipeline ingesting public Indian market APIs into PostgreSQL",
+            "Batch data warehouse modeling for sales intelligence"
+          ],
+          "target_activities": [
+            "Solve LeetCode Database problem set",
+            "Participate in analytics hackathons (Kaggle / Analytics Vidhya)"
+          ],
+          "checkpoints": [
+            "Comfortably write 50+ complex SQL queries involving CTEs and window functions"
+          ]
+        },
+        {
+          "label": "Year 4 (Final Year)",
+          "goals": [
+            "Learn Apache Spark for distributed computation and orchestration with Apache Airflow",
+            "Target data engineering campus and off-campus interviews"
+          ],
+          "skills_to_learn": [
+            "Apache Spark / PySpark",
+            "Apache Airflow",
+            "Data Warehousing (BigQuery or Snowflake)"
+          ],
+          "projects": [
+            "End-to-end Airflow DAG orchestrating daily data batch processing",
+            "PySpark streaming analytics pipeline"
+          ],
+          "target_activities": [
+            "Target analytics consulting and FinTech data engineering campus interviews"
+          ],
+          "checkpoints": [
+            "Successful execution of multi-task DAG running on local Airflow instance"
+          ]
+        },
+        {
+          "label": "First 1-2 Years Post-Graduation",
+          "goals": [
+            "Manage petabyte-scale data lakes and streaming architectures",
+            "Ensure data governance, schema evolution, and compliance"
+          ],
+          "skills_to_learn": [
+            "Apache Kafka",
+            "dbt (data build tool)",
+            "Data Lakehouse formats (Apache Iceberg / Delta Lake)"
+          ],
+          "projects": [
+            "Real-time event streaming pipeline processing 10,000 events/second"
+          ],
+          "target_activities": [
+            "Contribute to dbt or Airflow community plugins"
+          ],
+          "checkpoints": [
+            "Lead data reliability engineering initiatives and SLA enforcement"
+          ]
+        }
+      ],
+      "skill_gaps": [
+        {
+          "skill": "Advanced SQL & Query Optimization",
+          "current_level": 2,
+          "required_level": 4,
+          "priority": "high",
+          "why_it_matters": "Primary testing mechanism for all data engineering interviews."
+        },
+        {
+          "skill": "Data Modeling (Dimensional / Star Schema)",
+          "current_level": 1,
+          "required_level": 4,
+          "priority": "high",
+          "why_it_matters": "Essential for designing readable, performant analytical data warehouses."
+        },
+        {
+          "skill": "Python Data Manipulation (Pandas / Polars)",
+          "current_level": 2,
+          "required_level": 4,
+          "priority": "high",
+          "why_it_matters": "Standard for custom data extraction and transformation logic."
+        },
+        {
+          "skill": "Workflow Orchestration (Apache Airflow)",
+          "current_level": 0,
+          "required_level": 3,
+          "priority": "medium",
+          "why_it_matters": "Industry standard for scheduling, monitoring, and dependency management."
+        },
+        {
+          "skill": "Distributed Computing (Apache Spark / PySpark)",
+          "current_level": 0,
+          "required_level": 3,
+          "priority": "medium",
+          "why_it_matters": "Required to handle datasets exceeding single-node memory capacity."
+        },
+        {
+          "skill": "Cloud Data Warehouses (BigQuery / Snowflake)",
+          "current_level": 1,
+          "required_level": 3,
+          "priority": "medium",
+          "why_it_matters": "Most Indian enterprises have migrated analytical queries to the cloud."
+        },
+        {
+          "skill": "Data Quality & Automated Testing",
+          "current_level": 1,
+          "required_level": 3,
+          "priority": "low",
+          "why_it_matters": "Ensures pipeline data integrity before reaching business dashboards."
+        }
+      ],
+      "projects_to_build": [
+        {
+          "title": "Automated Indian Stock Market ETL Pipeline",
+          "description": "Daily batch pipeline scraping or consuming stock market feeds, cleaning data, and loading into an OLAP warehouse.",
+          "tech_stack": "Python, PostgreSQL, Apache Airflow, Docker",
+          "difficulty": "Intermediate",
+          "estimated_weeks": 4,
+          "what_it_proves": "Proves understanding of scheduled batch jobs, idempotency, and error recovery.",
+          "stretch_goal": "Add anomaly detection alerts via Slack or Email webhook."
+        },
+        {
+          "title": "Dimensional Data Warehouse for E-commerce",
+          "description": "Star-schema analytical database modeling customer orders, products, and fulfillment with optimized indexes.",
+          "tech_stack": "PostgreSQL, dbt, Metabase, Docker",
+          "difficulty": "Intermediate",
+          "estimated_weeks": 3,
+          "what_it_proves": "Proves dimensional modeling and business intelligence presentation."
+        },
+        {
+          "title": "Distributed PySpark Log Analyzer",
+          "description": "PySpark script processing large server access log datasets to detect traffic spikes and error clusters.",
+          "tech_stack": "Python, PySpark, Docker",
+          "difficulty": "Advanced",
+          "estimated_weeks": 3,
+          "what_it_proves": "Proves distributed data transformations and memory management."
+        }
+      ],
+      "first_month_plan": {
+        "weeks": [
+          {
+            "week_number": 1,
+            "theme": "Advanced SQL & Relational Modeling",
+            "daily_tasks": [
+              "Solve 3 medium LeetCode/Hackerrank SQL challenges daily",
+              "Master window functions (ROW_NUMBER, RANK, DENSE_RANK, LAG, LEAD)",
+              "Design 3NF relational schemas for transactional workflows"
+            ],
+            "resources": [
+              "Mode Analytics SQL Tutorial",
+              "LeetCode Database Track"
+            ],
+            "end_of_week_outcome": "20 SQL challenge solutions and schema creation scripts stored in GitHub."
+          },
+          {
+            "week_number": 2,
+            "theme": "Dimensional Data Modeling",
+            "daily_tasks": [
+              "Study Ralph Kimball dimensional modeling methodology",
+              "Design fact tables and dimension tables (SCD Type 1 & 2)",
+              "Implement analytical queries using Common Table Expressions (CTEs)"
+            ],
+            "resources": [
+              "The Data Warehouse Toolkit (Kimball summary)",
+              "PostgreSQL Official Documentation on Window Functions"
+            ],
+            "end_of_week_outcome": "Complete dimensional star schema for an e-commerce platform with sample analytics queries."
+          },
+          {
+            "week_number": 3,
+            "theme": "Python Data Engineering & Extraction",
+            "daily_tasks": [
+              "Build automated Python scripts to pull data from public REST APIs",
+              "Transform raw nested JSON into tabular structures using Pandas",
+              "Load cleaned records into PostgreSQL with upsert logic"
+            ],
+            "resources": [
+              "Pandas Official Documentation",
+              "Real Python: Working with Databases in Python"
+            ],
+            "end_of_week_outcome": "End-to-end Python script performing daily API extraction, cleaning, and database loading."
+          },
+          {
+            "week_number": 4,
+            "theme": "Pipeline Containerization & Airflow Introduction",
+            "daily_tasks": [
+              "Package data ingestion scripts inside Docker containers",
+              "Spin up local Apache Airflow using Docker Compose",
+              "Write your first Python DAG with task dependencies and retries"
+            ],
+            "resources": [
+              "Apache Airflow Official Tutorial",
+              "Marc Lamberti Airflow Guides"
+            ],
+            "end_of_week_outcome": "Running local Airflow DAG executing daily data pipeline tasks with error alerts."
+          }
+        ]
+      },
+      "resources": [
+        {
+          "name": "Data Engineering Zoomcamp (DataTalks.Club)",
+          "type": "Course",
+          "cost": "Free",
+          "description": "Comprehensive, highly regarded free open source course covering Docker, SQL, Airflow, Spark, and dbt."
+        },
+        {
+          "name": "Mode Analytics SQL Tutorial",
+          "type": "Interactive Platform",
+          "cost": "Free",
+          "description": "Practical SQL tutorial focused on real-world business queries and window functions."
+        },
+        {
+          "name": "PostgreSQL Official Documentation",
+          "type": "Official Documentation",
+          "cost": "Free",
+          "description": "Authoritative guide for database indexes, execution plans (EXPLAIN ANALYZE), and concurrency."
+        }
+      ],
+      "risks_and_tradeoffs": [
+        "Fewer off-campus fresher openings than general SDE roles; demands proven SQL and pipeline project proof to win interviews.",
+        "Requires learning distributed computing frameworks that are computationally heavy to run locally."
+      ]
+    }
+  ],
+  "assumptions_made": [
+    "Student can allocate 15-20 focused hours per week alongside regular college coursework and semester exams.",
+    "Student has personal laptop access with at least 8GB RAM and stable internet connectivity.",
+    "Student is aiming for on-campus campus placements starting in pre-final / final year and off-campus referrals."
+  ],
+  "disclaimers": [
+    "All salary ranges, hiring trends, and company recommendations are market projections based on current Indian tech recruitment patterns and are NOT guarantees of employment.",
+    "Actual campus placement offers depend heavily on college tier, individual problem-solving speed under pressure, and company-specific hiring criteria.",
+    "Project timelines assume consistent weekly effort and self-directed study."
+  ],
+  "overall_recommendation": "The Full Stack Developer pathway currently offers the strongest alignment (88 Fit Score) with the student's existing skill baseline, providing the widest availability of campus and off-campus fresher opportunities in India. Cloud/DevOps represents an excellent secondary specialization that can be merged with backend projects to create a standout portfolio."
+}
