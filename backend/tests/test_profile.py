@@ -55,7 +55,7 @@ def test_profile_lifecycle(client):
     del_edu_res = client.delete(f"/api/v1/profile/education/{edu_id}", headers=headers)
     assert del_edu_res.status_code == 204
 
-    # 6. Add and delete project
+    # 6. Add, update, and delete project
     new_proj = {
         "title": "AI Resume Scanner",
         "description": "ATS scanner with semantic matching.",
@@ -65,5 +65,36 @@ def test_profile_lifecycle(client):
     assert proj_res.status_code == 201
     proj_id = proj_res.json()["id"]
 
+    up_proj = client.put(
+        f"/api/v1/profile/projects/{proj_id}",
+        headers=headers,
+        json={"title": "Updated AI Resume Scanner"},
+    )
+    assert up_proj.status_code == 200
+    assert up_proj.json()["title"] == "Updated AI Resume Scanner"
+
     del_proj_res = client.delete(f"/api/v1/profile/projects/{proj_id}", headers=headers)
     assert del_proj_res.status_code == 204
+
+    # 7. Add, update, and delete experience
+    new_exp = {
+        "type": "hackathon",
+        "title": "Smart India Hackathon Finalist",
+        "organization": "AICTE",
+        "description": "Built agricultural supply chain tracker.",
+        "date_or_duration": "2024",
+    }
+    exp_res = client.post("/api/v1/profile/experiences", headers=headers, json=new_exp)
+    assert exp_res.status_code == 201
+    exp_id = exp_res.json()["id"]
+
+    up_exp = client.put(
+        f"/api/v1/profile/experiences/{exp_id}",
+        headers=headers,
+        json={"title": "Smart India Hackathon Winner"},
+    )
+    assert up_exp.status_code == 200
+    assert up_exp.json()["title"] == "Smart India Hackathon Winner"
+
+    del_exp_res = client.delete(f"/api/v1/profile/experiences/{exp_id}", headers=headers)
+    assert del_exp_res.status_code == 204

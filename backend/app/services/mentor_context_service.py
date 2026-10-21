@@ -129,8 +129,8 @@ class MentorContextService:
         try:
             kp = self.knowledge_service.get_knowledge_profile(db, user)
             verified = kp.get("verified_skills", [])
-            weaknesses = list(kp.get("all_weaknesses", []))[:4]
-            claimed = kp.get("claimed_unverified", [])[:4]
+            weaknesses = list(kp.get("weak_subtopics", kp.get("all_weaknesses", [])))[:4]
+            claimed = kp.get("claimed_unverified_skills", kp.get("claimed_unverified", []))[:4]
 
             kp_lines = ["KNOWLEDGE PROFILE & TEST RESULTS:"]
             if verified:
@@ -146,11 +146,16 @@ class MentorContextService:
                 kp_lines.append(f"- Weak Subtopics Identified: {'; '.join(w_strs)}")
 
             if claimed:
-                c_strs = [f"{c['skill']} (Self-rating: {c['self_level']}/5)" for c in claimed]
+                c_strs = [
+                    f"{c['skill']} (Self-rating: {c.get('self_level', c.get('claimed_level', 1))}/5)"
+                    for c in claimed
+                ]
                 kp_lines.append(f"- Unverified Claimed Skills: {', '.join(c_strs)}")
 
             sections.append("\n".join(kp_lines))
-        except Exception:
+        except Exception as e:
+            import logging
+            logging.getLogger("career_path_api").error(f"Error in knowledge profile assembly: {e}", exc_info=True)
             sections.append("KNOWLEDGE PROFILE: Standard initial profile.")
 
         # 4. Daily Progress & Streaks (Phase 4)

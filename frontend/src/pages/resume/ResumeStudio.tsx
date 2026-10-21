@@ -336,7 +336,7 @@ export const ResumeStudio: React.FC = () => {
 
             {/* Checklist items */}
             <div className="space-y-2.5 pt-2 border-t border-gray-100">
-              {data.strength_checklist.map((item, idx) => (
+              {(data.strength_checklist || []).map((item, idx) => (
                 <div key={idx} className="flex items-start gap-2.5 text-xs">
                   {item.passed ? (
                     <CheckCircle2 className="w-4 h-4 text-emerald-600 shrink-0 mt-0.5" />

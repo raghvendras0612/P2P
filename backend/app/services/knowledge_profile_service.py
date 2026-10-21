@@ -86,6 +86,7 @@ class KnowledgeProfileService:
                     {
                         "skill": skill_name,
                         "claimed_level": claimed_lvl,
+                        "self_level": claimed_lvl,
                         "claimed_level_name": LEVEL_NAMES.get(claimed_lvl, "Claimed"),
                     }
                 )
@@ -93,9 +94,11 @@ class KnowledgeProfileService:
         return {
             "verified_skills": verified_skills,
             "claimed_unverified_skills": claimed_unverified,
+            "claimed_unverified": claimed_unverified,
             "failed_skills": failed_skills,
             "overclaimed_gaps": overclaimed_gaps,
             "weak_subtopics": sorted(list(all_weaknesses)),
+            "all_weaknesses": sorted(list(all_weaknesses)),
             "strong_subtopics": sorted(list(all_strengths)),
         }
 

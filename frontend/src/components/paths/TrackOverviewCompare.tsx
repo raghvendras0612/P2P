@@ -246,9 +246,10 @@ export const TrackOverviewCompare: React.FC<TrackOverviewCompareProps> = ({
               <tr className="hover:bg-gray-50">
                 <td className="py-3 px-4 font-semibold text-gray-700">Time to Job-Ready</td>
                 {paths.map((p) => {
-                  const academicMilestones = p.yearly_milestones.filter(
-                    (m) => !m.label.toLowerCase().includes('post') && !m.label.toLowerCase().includes('first 1-2 years')
-                  );
+                  const academicMilestones = (p.yearly_milestones || []).filter((m) => {
+                    const l = (m.label || (m as any).milestone_title || (m as any).academic_year || '').toLowerCase();
+                    return !l.includes('post') && !l.includes('first 1-2 years');
+                  });
                   const timeText = academicMilestones.length <= 1 ? '6 - 12 Months' : `${academicMilestones.length} Academic Years`;
                   return (
                     <td key={p.path_slug} className="py-3 px-4 text-gray-700 font-medium">
@@ -263,7 +264,7 @@ export const TrackOverviewCompare: React.FC<TrackOverviewCompareProps> = ({
                 <td className="py-3 px-4 font-semibold text-gray-700">Recommended Projects</td>
                 {paths.map((p) => (
                   <td key={p.path_slug} className="py-3 px-4 text-gray-600">
-                    {p.projects_to_build.length} portfolio apps
+                    {(p.projects_to_build || []).length} portfolio apps
                   </td>
                 ))}
               </tr>
@@ -271,11 +272,16 @@ export const TrackOverviewCompare: React.FC<TrackOverviewCompareProps> = ({
               {/* Kickoff Sprint Duration */}
               <tr className="hover:bg-gray-50">
                 <td className="py-3 px-4 font-semibold text-gray-700">First-Month Kickoff</td>
-                {paths.map((p) => (
-                  <td key={p.path_slug} className="py-3 px-4 text-primary-700 font-medium">
-                    {p.first_month_plan.weeks.length} structured weeks
-                  </td>
-                ))}
+                {paths.map((p) => {
+                  const weekCount = Array.isArray(p.first_month_plan)
+                    ? p.first_month_plan.length
+                    : (p.first_month_plan?.weeks?.length || 4);
+                  return (
+                    <td key={p.path_slug} className="py-3 px-4 text-primary-700 font-medium">
+                      {weekCount} structured weeks
+                    </td>
+                  );
+                })}
               </tr>
             </tbody>
           </table>
@@ -291,7 +297,7 @@ export const TrackOverviewCompare: React.FC<TrackOverviewCompareProps> = ({
             AI Simulation Assumptions
           </h4>
           <ul className="text-xs text-amber-900/90 space-y-1">
-            {assumptions_made.map((item, idx) => (
+            {(assumptions_made || (output as any).assumptions || []).map((item: string, idx: number) => (
               <li key={idx} className="flex items-start gap-1.5">
                 <span className="text-amber-600 font-bold">&bull;</span>
                 <span>{item}</span>

@@ -209,7 +209,7 @@ export const TestScorecardModal: React.FC<TestScorecardModalProps> = ({
             </div>
 
             <div className="space-y-2 text-sm text-gray-700">
-              {result.recommendations.map((rec, i) => (
+              {(result.recommendations || []).map((rec, i) => (
                 <div key={i} className="flex items-start gap-2">
                   <span className="w-1.5 h-1.5 rounded-full bg-primary-600 mt-2 shrink-0" />
                   <span>{rec}</span>
@@ -224,8 +224,8 @@ export const TestScorecardModal: React.FC<TestScorecardModalProps> = ({
                   <CheckCircle2 className="w-3.5 h-3.5 text-emerald-600" /> Key Strengths
                 </span>
                 <div className="flex flex-wrap gap-1.5 mt-1.5">
-                  {result.strengths.length > 0 ? (
-                    result.strengths.map((s, idx) => (
+                  {(result.strengths || []).length > 0 ? (
+                    (result.strengths || []).map((s, idx) => (
                       <span
                         key={idx}
                         className="px-2.5 py-1 text-xs font-medium bg-emerald-100 text-emerald-800 rounded-md border border-emerald-200"
@@ -246,8 +246,8 @@ export const TestScorecardModal: React.FC<TestScorecardModalProps> = ({
                   <TrendingUp className="w-3.5 h-3.5 text-amber-600" /> Areas to Revise
                 </span>
                 <div className="flex flex-wrap gap-1.5 mt-1.5">
-                  {result.weaknesses.length > 0 ? (
-                    result.weaknesses.map((w, idx) => (
+                  {(result.weaknesses || []).length > 0 ? (
+                    (result.weaknesses || []).map((w, idx) => (
                       <span
                         key={idx}
                         className="px-2.5 py-1 text-xs font-medium bg-amber-100 text-amber-800 rounded-md border border-amber-200"

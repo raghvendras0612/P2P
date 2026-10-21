@@ -116,6 +116,41 @@ def test_login_success_and_logout(client):
     assert logout_res.status_code == 200
 
 
+def test_refresh_token_lifecycle(client):
+    payload = get_sample_registration_payload("refresh_test@example.com")
+    reg_res = client.post("/api/v1/auth/register", json=payload)
+    assert reg_res.status_code == 201
+
+    login_res = client.post(
+        "/api/v1/auth/login",
+        json={"email": "refresh_test@example.com", "password": "StrongPassword123!"},
+    )
+    assert login_res.status_code == 200
+    refresh_cookie = login_res.cookies.get("refresh_token")
+    assert refresh_cookie is not None
+
+    # 1. Refresh via cookie
+    ref_res1 = client.post("/api/v1/auth/refresh", cookies={"refresh_token": refresh_cookie})
+    assert ref_res1.status_code == 200
+    new_token = ref_res1.json()["access_token"]
+    assert new_token is not None
+
+    # 2. Refresh via JSON body (with cleared cookies)
+    client.cookies.clear()
+    ref_res2 = client.post("/api/v1/auth/refresh", json={"refresh_token": refresh_cookie})
+    assert ref_res2.status_code == 200
+
+    # 3. Refresh with invalid token
+    client.cookies.clear()
+    bad_res = client.post("/api/v1/auth/refresh", json={"refresh_token": "invalid.jwt.token"})
+    assert bad_res.status_code == 401
+
+    # 4. Refresh with missing token
+    client.cookies.clear()
+    missing_res = client.post("/api/v1/auth/refresh", json={})
+    assert missing_res.status_code == 401
+
+
 def test_login_invalid_credentials(client):
     response = client.post(
         "/api/v1/auth/login",
